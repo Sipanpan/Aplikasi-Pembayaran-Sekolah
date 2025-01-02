@@ -263,7 +263,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button2.Location = new System.Drawing.Point(732, 426);
+            this.guna2Button2.Location = new System.Drawing.Point(739, 426);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(106, 30);
             this.guna2Button2.TabIndex = 36;
