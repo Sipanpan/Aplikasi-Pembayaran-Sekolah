@@ -31,25 +31,29 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lvwPembayaran = new System.Windows.Forms.ListView();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCari = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPerbaiki = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHapus = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(369, 29);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(277, 24);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(499, 90);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(400, 72);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Daftar Pembayaran";
             // 
             // lvwPembayaran
             // 
             this.lvwPembayaran.HideSelection = false;
-            this.lvwPembayaran.Location = new System.Drawing.Point(12, 229);
+            this.lvwPembayaran.Location = new System.Drawing.Point(9, 186);
+            this.lvwPembayaran.Margin = new System.Windows.Forms.Padding(2);
             this.lvwPembayaran.Name = "lvwPembayaran";
-            this.lvwPembayaran.Size = new System.Drawing.Size(1113, 783);
+            this.lvwPembayaran.Size = new System.Drawing.Size(836, 637);
             this.lvwPembayaran.TabIndex = 1;
             this.lvwPembayaran.UseCompatibleStateImageBehavior = false;
             // 
@@ -64,39 +68,76 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(804, 158);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox1.Location = new System.Drawing.Point(11, 129);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(212, 45);
+            this.guna2TextBox1.Size = new System.Drawing.Size(159, 37);
             this.guna2TextBox1.TabIndex = 2;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // guna2Button1
+            // btnCari
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(1031, 159);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(94, 45);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Cari";
+            this.btnCari.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCari.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCari.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCari.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCari.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCari.ForeColor = System.Drawing.Color.White;
+            this.btnCari.Location = new System.Drawing.Point(181, 130);
+            this.btnCari.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCari.Name = "btnCari";
+            this.btnCari.Size = new System.Drawing.Size(70, 37);
+            this.btnCari.TabIndex = 3;
+            this.btnCari.Text = "Cari";
+            // 
+            // btnPerbaiki
+            // 
+            this.btnPerbaiki.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPerbaiki.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPerbaiki.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPerbaiki.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPerbaiki.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPerbaiki.ForeColor = System.Drawing.Color.White;
+            this.btnPerbaiki.Location = new System.Drawing.Point(310, 129);
+            this.btnPerbaiki.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPerbaiki.Name = "btnPerbaiki";
+            this.btnPerbaiki.Size = new System.Drawing.Size(70, 37);
+            this.btnPerbaiki.TabIndex = 4;
+            this.btnPerbaiki.Text = "Perbaiki";
+            this.btnPerbaiki.Click += new System.EventHandler(this.btnPerbaiki_Click);
+            // 
+            // btnHapus
+            // 
+            this.btnHapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHapus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHapus.ForeColor = System.Drawing.Color.White;
+            this.btnHapus.Location = new System.Drawing.Point(408, 130);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHapus.Name = "btnHapus";
+            this.btnHapus.Size = new System.Drawing.Size(70, 37);
+            this.btnHapus.TabIndex = 5;
+            this.btnHapus.Text = "Hapus";
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // FormPembayaran
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1137, 1024);
-            this.Controls.Add(this.guna2Button1);
+            this.ClientSize = new System.Drawing.Size(853, 718);
+            this.Controls.Add(this.btnHapus);
+            this.Controls.Add(this.btnPerbaiki);
+            this.Controls.Add(this.btnCari);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.lvwPembayaran);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormPembayaran";
             this.Text = "FormPembayaran";
             this.ResumeLayout(false);
@@ -109,6 +150,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.ListView lvwPembayaran;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnCari;
+        private Guna.UI2.WinForms.Guna2Button btnPerbaiki;
+        private Guna.UI2.WinForms.Guna2Button btnHapus;
     }
 }

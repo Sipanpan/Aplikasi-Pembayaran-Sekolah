@@ -102,5 +102,61 @@ namespace Final_Project.View
             itemRow.SubItems[3].Text = byr.Metode_Pembayaran;
             itemRow.SubItems[4].Text = byr.Total.ToString();
         }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPerbaiki_Click(object sender, EventArgs e)
+        {
+            if (lvwPembayaran.SelectedItems.Count > 0)
+            {
+                // ambil objek brg yang mau diedit dari collection
+                Pembayaran byr = listOfPembayaran[lvwPembayaran.SelectedIndices[0]];
+
+                // buat objek form entry data barang
+                //formTambah frmTambah = new formTambah("Perbaiki Data Pembayaran", byr, controller); !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                // mendaftarkan method event handler untuk merespon event OnUpdate
+                //frmTambah.OnUpdate += OnUpdateEventHandler;
+
+                // tampilkan form tambah
+                //frmTambah.ShowDialog();
+            }
+            else // data belum dipilih
+            {
+                MessageBox.Show("Data belum dipilih", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (lvwPembayaran.SelectedItems.Count > 0)
+            {
+                var konfirmasi = MessageBox.Show("Apakah data pembayaran ingin dihapus ?", "Konfirmasi",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                if (konfirmasi == DialogResult.Yes)
+                {
+                    // ambil objek brg yang mau dihapus dari collection
+                    Pembayaran byr = listOfPembayaran[lvwPembayaran.SelectedIndices[0]];
+
+                    // panggil operasi CRUD
+                    var result = controller.Delete(byr);
+                    if (result > 0)
+                    {
+                        LoadDataMahasiswa();
+                    }
+                }
+
+            }
+            else // data belum dipilih
+            {
+                MessageBox.Show("Data pembayaran belum dipilih !!!", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }
