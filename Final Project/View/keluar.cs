@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Final_Project.View
 {
-    public partial class FormBeranda : Form
+    public partial class keluar : Form
     {
-        public FormBeranda()
+        public keluar()
         {
             InitializeComponent();
         }

@@ -67,11 +67,11 @@
     <Compile Include="View\daftar.Designer.cs">
       <DependentUpon>daftar.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FormBeranda.cs">
+    <Compile Include="View\keluar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FormBeranda.Designer.cs">
-      <DependentUpon>FormBeranda.cs</DependentUpon>
+    <Compile Include="View\keluar.Designer.cs">
+      <DependentUpon>keluar.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormPembayaran.cs">
       <SubType>Form</SubType>
@@ -121,8 +121,8 @@
     <EmbeddedResource Include="View\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FormBeranda.resx">
-      <DependentUpon>FormBeranda.cs</DependentUpon>
+    <EmbeddedResource Include="View\keluar.resx">
+      <DependentUpon>keluar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
@@ -144,6 +144,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Properties\Group 1.png" />
+    <None Include="Resources\Emoji Message.png" />
     <None Include="Resources\Group 15.png" />
     <None Include="Resources\Group 11 %283%29.png" />
     <None Include="Resources\Group 11 %282%29.png" />

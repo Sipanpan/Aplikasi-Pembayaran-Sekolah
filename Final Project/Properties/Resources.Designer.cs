@@ -153,6 +153,16 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Emoji_Message {
+            get {
+                object obj = ResourceManager.GetObject("Emoji Message", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_11__2_ {
             get {
                 object obj = ResourceManager.GetObject("Group 11 (2)", resourceCulture);
