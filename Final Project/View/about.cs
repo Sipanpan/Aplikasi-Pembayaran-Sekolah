@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Final_Project.View
 {
-    public partial class keluar : Form
+    public partial class about : Form
     {
-        public keluar()
+        public about()
         {
             InitializeComponent();
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

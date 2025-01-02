@@ -20,6 +20,7 @@ namespace Final_Project
         FormPembayaran pembayaran;
         FormTambahPembayaran tambahPembayaran;
         popUpEditPembayaran popUpEditPembayaran;
+        keluar keluar;
         public mainForm()
         {
             InitializeComponent();
@@ -42,7 +43,17 @@ namespace Final_Project
 
         private void btnKeluar_Click(object sender, EventArgs e)
         {
-            Close();
+            pnMDI.Visible = false;
+            keluar = new keluar();
+            keluar.FormClosed += keluar_FormClosed;
+            keluar.MdiParent = this;
+            keluar.Dock = DockStyle.Fill;
+            keluar.Show();
+        }
+
+        private void keluar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            keluar = null;
         }
 
         private void btnPembayaran_Click_1(object sender, EventArgs e)
