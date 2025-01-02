@@ -55,7 +55,7 @@ namespace Final_Project.Model.Repository
             return result;
         }
 
-        public decimal GetTotal()
+        /*public decimal GetTotal()
         {
             decimal Total = 0;
 
@@ -81,7 +81,7 @@ namespace Final_Project.Model.Repository
                 }
             }
             return Total;
-        }
+        }*/
 
         public int Update(Pembayaran byr)
         {
@@ -150,7 +150,7 @@ namespace Final_Project.Model.Repository
             {
                 // deklarasi perintah SQL
                 string sql = @"select Kd_Pembayaran, Nama, Jenis_Pembayaran, Metode_Pembayaran, Total 
-                               from barang 
+                               from pembayaran 
                                order by Kd_Pembayaran";
 
                 // membuat objek command menggunakan blok using
@@ -168,7 +168,7 @@ namespace Final_Project.Model.Repository
                             byr.Nama = dtr["Nama"].ToString();
                             byr.Jenis_Pembayaran = dtr["Jenis_Pembayaran"].ToString();
                             byr.Metode_Pembayaran = dtr["Metode_Pembayaran"].ToString();
-                            byr.Total = byr.Total;
+                            byr.Total = Convert.ToInt32(dtr["Total"]);
 
                             // tambahkan objek mahasiswa ke dalam collection
                             list.Add(byr);

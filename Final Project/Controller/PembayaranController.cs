@@ -225,7 +225,7 @@ namespace Final_Project.Controller
 
                 // panggil method GetAll yang ada di dalam class repository
                 // list = _repository.ReadTTL();
-                result = _repository.GetTotal();
+                //result = _repository.GetTotal();
             }
             return result;
         }
