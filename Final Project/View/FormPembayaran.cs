@@ -25,7 +25,7 @@ namespace Final_Project.View
             InitializeComponent();
             // membuat objek controller
             controller = new PembayaranController();
-            LoadDataMahasiswa();
+            LoadDataPembayaran();
             InisialisasiListView();
         }
 
@@ -37,13 +37,14 @@ namespace Final_Project.View
 
             lvwPembayaran.Columns.Add("No.", 30, HorizontalAlignment.Center);
             lvwPembayaran.Columns.Add("Kode Pembayaran", 100, HorizontalAlignment.Center);
-            lvwPembayaran.Columns.Add("Nama", 400, HorizontalAlignment.Left);
-            lvwPembayaran.Columns.Add("Jenis Pembayaran", 100, HorizontalAlignment.Center);
-            lvwPembayaran.Columns.Add("Total", 200, HorizontalAlignment.Center);
+            lvwPembayaran.Columns.Add("Nama", 200, HorizontalAlignment.Left);
+            lvwPembayaran.Columns.Add("Jenis Pembayaran", 200, HorizontalAlignment.Center);
+            lvwPembayaran.Columns.Add("Jenis Pembayaran", 200, HorizontalAlignment.Center);
+            lvwPembayaran.Columns.Add("Total", 100, HorizontalAlignment.Center);
         }
 
         // method untuk menampilkan semua data mahasiswa
-        private void LoadDataMahasiswa()
+        private void LoadDataPembayaran()
         {
             // kosongkan listview
             lvwPembayaran.Items.Clear();
@@ -147,7 +148,7 @@ namespace Final_Project.View
                     var result = controller.Delete(byr);
                     if (result > 0)
                     {
-                        LoadDataMahasiswa();
+                        LoadDataPembayaran();
                     }
                 }
 
