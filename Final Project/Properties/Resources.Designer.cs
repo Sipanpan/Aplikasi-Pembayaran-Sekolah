@@ -83,6 +83,16 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap el_ok_circle {
+            get {
+                object obj = ResourceManager.GetObject("el_ok-circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Email_Icon_Container {
             get {
                 object obj = ResourceManager.GetObject("Email Icon Container", resourceCulture);

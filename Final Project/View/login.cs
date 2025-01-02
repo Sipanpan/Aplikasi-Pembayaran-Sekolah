@@ -16,5 +16,12 @@ namespace Final_Project.View
         {
             InitializeComponent();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            daftar from = new daftar();
+            from.ShowDialog();
+        }
     }
 }
