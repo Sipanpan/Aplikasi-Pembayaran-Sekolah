@@ -144,6 +144,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Properties\Group 1.png" />
+    <None Include="Resources\Group 15.png" />
     <None Include="Resources\Group 11 %283%29.png" />
     <None Include="Resources\Group 11 %282%29.png" />
     <None Include="Resources\btnLogOut.png" />
