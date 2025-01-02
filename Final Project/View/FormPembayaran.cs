@@ -159,5 +159,29 @@ namespace Final_Project.View
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnCari_Click(object sender, EventArgs e)
+        {
+            // kosongkan list view
+            lvwPembayaran.Items.Clear();
+
+            // panggil method ReadAll dan tampng ke dlm collection
+            listOfPembayaran = controller.ReadByNama(txtCari.Text);
+
+            // ekstrak objek mhs dari collection
+            foreach (var byr in listOfPembayaran)
+            {
+                var noUrut = lvwPembayaran.Items.Count + 1;
+
+                var item = new ListViewItem(noUrut.ToString());
+                item.SubItems.Add(byr.Kd_Pembayaran);
+                item.SubItems.Add(byr.Nama);
+                item.SubItems.Add(byr.Jenis_Pembayaran);
+                item.SubItems.Add(byr.Metode_Pembayaran);
+                //item.SubItems.Add(byr.Total);
+
+                lvwPembayaran.Items.Add(item);
+            }
+        }
     }
 }
