@@ -39,7 +39,7 @@ namespace Final_Project.View
             lvwPembayaran.Columns.Add("Kode Pembayaran", 100, HorizontalAlignment.Center);
             lvwPembayaran.Columns.Add("Nama", 200, HorizontalAlignment.Left);
             lvwPembayaran.Columns.Add("Jenis Pembayaran", 200, HorizontalAlignment.Center);
-            lvwPembayaran.Columns.Add("Jenis Pembayaran", 200, HorizontalAlignment.Center);
+            lvwPembayaran.Columns.Add("Metode Pembayaran", 200, HorizontalAlignment.Center);
             lvwPembayaran.Columns.Add("Total", 100, HorizontalAlignment.Center);
         }
 
@@ -117,13 +117,13 @@ namespace Final_Project.View
                 Pembayaran byr = listOfPembayaran[lvwPembayaran.SelectedIndices[0]];
 
                 // buat objek form entry data barang
-                //formTambah frmTambah = new formTambah("Perbaiki Data Pembayaran", byr, controller); !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                popUpEditPembayaran frmpop = new popUpEditPembayaran("Perbaiki Data Pembayaran", byr, controller);
 
                 // mendaftarkan method event handler untuk merespon event OnUpdate
-                //frmTambah.OnUpdate += OnUpdateEventHandler;
+                frmpop.OnUpdate += OnUpdateEventHandler;
 
                 // tampilkan form tambah
-                //frmTambah.ShowDialog();
+                frmpop.ShowDialog();
             }
             else // data belum dipilih
             {

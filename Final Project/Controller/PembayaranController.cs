@@ -87,10 +87,9 @@ namespace Final_Project.Controller
         {
             int result = 0;
 
-            // cek Nama yang diinputkan tidak boleh kosong
             if (string.IsNullOrEmpty(byr.Kd_Pembayaran))
             {
-                MessageBox.Show("Kd_Pembayaran harus diisi !!!", "Peringatan",
+                MessageBox.Show("Kd harus diisi !!!", "Peringatan",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return 0;
             }
@@ -119,6 +118,13 @@ namespace Final_Project.Controller
                 return 0;
             }
 
+            if (string.IsNullOrEmpty(byr.Total.ToString()))
+            {
+                MessageBox.Show("total harus diisi !!!", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return 0;
+            }
+
             // membuat objek context menggunakan blok using
             using (DbContext context = new DbContext())
             {
@@ -131,12 +137,12 @@ namespace Final_Project.Controller
 
             if (result > 0)
             {
-                MessageBox.Show("Data Pembayaran berhasil diupdate !", "Informasi",
+                MessageBox.Show("Data barang berhasil diupdate !", "Informasi",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Data Pembayaran gagal diupdate !!!", "Peringatan",
+                MessageBox.Show("Data barang gagal diupdate !!!", "Peringatan",
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
