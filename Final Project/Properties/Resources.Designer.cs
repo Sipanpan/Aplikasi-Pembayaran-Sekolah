@@ -63,6 +63,36 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _27daa798a0bf753c2adbc96862baca5b_1 {
+            get {
+                object obj = ResourceManager.GetObject("27daa798a0bf753c2adbc96862baca5b 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8ea057488ca18f2814bce2099130647f_1 {
+            get {
+                object obj = ResourceManager.GetObject("8ea057488ca18f2814bce2099130647f 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8ed86b87df50068f8bfec9ea4b364f1d_1 {
+            get {
+                object obj = ResourceManager.GetObject("8ed86b87df50068f8bfec9ea4b364f1d 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background_Shape {
             get {
                 object obj = ResourceManager.GetObject("Background_Shape", resourceCulture);
@@ -123,6 +153,16 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dc3f9cb9821d73633f15db56df0c1d61_1 {
+            get {
+                object obj = ResourceManager.GetObject("dc3f9cb9821d73633f15db56df0c1d61 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap el_ok_circle {
             get {
                 object obj = ResourceManager.GetObject("el_ok-circle", resourceCulture);
@@ -156,6 +196,16 @@ namespace Final_Project.Properties {
         internal static System.Drawing.Bitmap Emoji_Message {
             get {
                 object obj = ResourceManager.GetObject("Emoji Message", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fe5ff7619c50335a2992d770177f960f_1 {
+            get {
+                object obj = ResourceManager.GetObject("fe5ff7619c50335a2992d770177f960f 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

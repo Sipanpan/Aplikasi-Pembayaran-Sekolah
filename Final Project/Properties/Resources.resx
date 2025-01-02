@@ -130,14 +130,14 @@
   <data name="Background_Shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background Shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dc3f9cb9821d73633f15db56df0c1d61 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dc3f9cb9821d73633f15db56df0c1d61 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pngwing.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnPembayaran" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnPembayaran.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hugeicons_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hugeicons_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,6 +160,18 @@
   <data name="Continue Button Container" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Continue Button Container.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="8ed86b87df50068f8bfec9ea4b364f1d 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8ed86b87df50068f8bfec9ea4b364f1d 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fe5ff7619c50335a2992d770177f960f 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fe5ff7619c50335a2992d770177f960f 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Emoji Message" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Emoji Message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Main_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Main Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sepatu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,8 +181,11 @@
   <data name="btnLogOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnLogOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Main_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Main Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="27daa798a0bf753c2adbc96862baca5b 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\27daa798a0bf753c2adbc96862baca5b 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Email Icon Container" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Email Icon Container.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnBeranda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnBeranda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,10 +193,10 @@
   <data name="Group 15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Email Icon Container" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Email Icon Container.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Emoji Message" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Emoji Message.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="8ea057488ca18f2814bce2099130647f 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8ea057488ca18f2814bce2099130647f 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

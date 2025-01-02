@@ -162,6 +162,12 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Properties\Group 1.png" />
+    <None Include="Resources\fe5ff7619c50335a2992d770177f960f 1.png" />
+    <None Include="Resources\27daa798a0bf753c2adbc96862baca5b 1.png" />
+    <None Include="Resources\8ea057488ca18f2814bce2099130647f 1.png" />
+    <Content Include="Resources\8ed86b87df50068f8bfec9ea4b364f1d 1.png" />
+    <None Include="Resources\dc3f9cb9821d73633f15db56df0c1d61 1.png" />
+    <None Include="Resources\8ed86b87df50068f8bfec9ea4b364f1d 11.png" />
     <None Include="Resources\Emoji Message.png" />
     <None Include="Resources\Group 15.png" />
     <None Include="Resources\Group 11 %283%29.png" />
