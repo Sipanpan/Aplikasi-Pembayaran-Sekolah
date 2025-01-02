@@ -216,7 +216,7 @@ namespace Final_Project.Model.Repository
                             byr.Nama = dtr["Nama"].ToString();
                             byr.Jenis_Pembayaran = dtr["Jenis_Pembayaran"].ToString();
                             byr.Metode_Pembayaran = dtr["Metode_Pembayaran"].ToString();
-                            byr.Total = byr.Total;
+                            byr.Total = Convert.ToInt32(dtr["Total"]);
 
                             // tambahkan objek mahasiswa ke dalam collection
                             list.Add(byr);
