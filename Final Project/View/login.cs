@@ -16,5 +16,10 @@ namespace Final_Project.View
         {
             InitializeComponent();
         }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
