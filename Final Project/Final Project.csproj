@@ -64,6 +64,12 @@
     <Compile Include="View\FormBeranda.Designer.cs">
       <DependentUpon>FormBeranda.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPembayaran.Designer.cs">
+      <DependentUpon>FormPembayaran.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="View\daftar.resx">
       <DependentUpon>daftar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPembayaran.resx">
+      <DependentUpon>FormPembayaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\login.resx">
       <DependentUpon>login.cs</DependentUpon>

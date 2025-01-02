@@ -14,7 +14,7 @@ namespace Final_Project
     public partial class mainForm : Form
     {
         login lgn;
-        FormBeranda dashboard;
+        FormPembayaran pembayaran;
         public mainForm()
         {
             InitializeComponent();
@@ -35,29 +35,24 @@ namespace Final_Project
             lgn = null;
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            pnMDI.Visible = false;
-            dashboard = new FormBeranda();
-            dashboard.FormClosed += dashboard_FormClosed;
-            dashboard.MdiParent = this;
-            dashboard.Dock = DockStyle.Fill;
-            dashboard.Show();
-        }
-
-        private void dashboard_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            dashboard = null;
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void btnKeluar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnPembayaran_Click_1(object sender, EventArgs e)
+        {
+            pnMDI.Visible = false;
+            pembayaran = new FormPembayaran();
+            pembayaran.FormClosed += pembayaran_FormClosed;
+            pembayaran.MdiParent = this;
+            pembayaran.Dock = DockStyle.Fill;
+            pembayaran.Show();
+        }
+
+        private void pembayaran_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            pembayaran = null;
         }
     }
 }
