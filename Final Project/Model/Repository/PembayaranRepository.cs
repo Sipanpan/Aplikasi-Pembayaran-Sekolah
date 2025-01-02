@@ -36,7 +36,7 @@ namespace Final_Project.Model.Repository
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _conn))
             {
                 // mendaftarkan parameter dan mengeset nilainya
-                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.kd_Pembayaran);
+                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.Kd_Pembayaran);
                 cmd.Parameters.AddWithValue("@Nama", byr.Nama);
                 cmd.Parameters.AddWithValue("@Jenis_Pembayaran", byr.Jenis_Pembayaran);
                 cmd.Parameters.AddWithValue("@Metode_Pembayaran", byr.Metode_Pembayaran);
@@ -95,7 +95,7 @@ namespace Final_Project.Model.Repository
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _conn))
             {
                 // mendaftarkan parameter dan mengeset nilainya
-                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.kd_Pembayaran);
+                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.Kd_Pembayaran);
                 cmd.Parameters.AddWithValue("@Nama", byr.Nama);
                 cmd.Parameters.AddWithValue("@Jenis_Pembayaran", byr.Jenis_Pembayaran);
                 cmd.Parameters.AddWithValue("@Metode_Pembayaran", byr.Metode_Pembayaran);
@@ -126,7 +126,7 @@ namespace Final_Project.Model.Repository
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _conn))
             {
                 // mendaftarkan parameter dan mengeset nilainya
-                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.kd_Pembayaran);
+                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.Kd_Pembayaran);
 
                 try
                 {
@@ -164,7 +164,7 @@ namespace Final_Project.Model.Repository
                         {
                             // proses konversi dari row result set ke object
                             Pembayaran byr = new Pembayaran();
-                            byr.kd_Pembayaran = dtr["Kd_Pembayaran"].ToString();
+                            byr.Kd_Pembayaran = dtr["Kd_Pembayaran"].ToString();
                             byr.Nama = dtr["Nama"].ToString();
                             byr.Jenis_Pembayaran = dtr["Jenis_Pembayaran"].ToString();
                             byr.Metode_Pembayaran = dtr["Metode_Pembayaran"].ToString();
@@ -212,7 +212,7 @@ namespace Final_Project.Model.Repository
                         {
                             // proses konversi dari row result set ke object
                             Pembayaran byr = new Pembayaran();
-                            byr.kd_Pembayaran = dtr["Kd_Pembayaran"].ToString();
+                            byr.Kd_Pembayaran = dtr["Kd_Pembayaran"].ToString();
                             byr.Nama = dtr["Nama"].ToString();
                             byr.Jenis_Pembayaran = dtr["Jenis_Pembayaran"].ToString();
                             byr.Metode_Pembayaran = dtr["Metode_Pembayaran"].ToString();
