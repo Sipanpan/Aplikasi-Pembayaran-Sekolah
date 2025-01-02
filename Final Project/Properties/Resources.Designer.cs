@@ -173,6 +173,16 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_15 {
+            get {
+                object obj = ResourceManager.GetObject("Group 15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hugeicons_lock {
             get {
                 object obj = ResourceManager.GetObject("hugeicons_lock", resourceCulture);
