@@ -30,7 +30,7 @@ namespace Final_Project.Model.Repository
 
             // deklarasi perintah sql
             string sql = @"insert into pembayaran (Kd_Pembayaran, Nama, Jenis_Pembayaran, Metode_Pembayaran, Total)
-                            values (@Kd_pembayaran, @Nama, @Jenis_Pembayaran, @Metode_Pembayaran, @Total)";
+                            values (@Kd_Pembayaran, @Nama, @Jenis_Pembayaran, @Metode_Pembayaran, @Total)";
 
             // membuat objek command menggunakan blok using
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _conn))
@@ -40,7 +40,7 @@ namespace Final_Project.Model.Repository
                 cmd.Parameters.AddWithValue("@Nama", byr.Nama);
                 cmd.Parameters.AddWithValue("@Jenis_Pembayaran", byr.Jenis_Pembayaran);
                 cmd.Parameters.AddWithValue("@Metode_Pembayaran", byr.Metode_Pembayaran);
-                cmd.Parameters.AddWithValue("@Total", byr.Total);
+                cmd.Parameters.AddWithValue("@Total", Int32.Parse(byr.Total.ToString()));
 
                 try
                 {

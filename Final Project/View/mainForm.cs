@@ -1,4 +1,5 @@
 ﻿using Final_Project.View;
+using Guna.UI2.AnimatorNS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace Final_Project
         login lgn;
         FormPembayaran pembayaran;
         FormTambahPembayaran tambahPembayaran;
+        popUpEditPembayaran popUpEditPembayaran;
         public mainForm()
         {
             InitializeComponent();

@@ -33,14 +33,15 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.comboBoxMetodePembayaran = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbxMetodePembayaran = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.comboBoxJenisBayar = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbxJenisBayar = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtNamaPmebayar = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNamaPembayar = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtKodeBayar = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblJudul = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             this.btnBayar.Size = new System.Drawing.Size(605, 59);
             this.btnBayar.TabIndex = 11;
             this.btnBayar.Text = "Bayar";
+            this.btnBayar.Click += new System.EventHandler(this.btnBayar_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -77,18 +79,19 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.guna2Panel1.BorderRadius = 10;
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.btnBayar);
             this.guna2Panel1.Controls.Add(this.txtTotal);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2Panel1.Controls.Add(this.comboBoxMetodePembayaran);
+            this.guna2Panel1.Controls.Add(this.cbxMetodePembayaran);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
-            this.guna2Panel1.Controls.Add(this.comboBoxJenisBayar);
+            this.guna2Panel1.Controls.Add(this.cbxJenisBayar);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2Panel1.Controls.Add(this.txtNamaPmebayar);
+            this.guna2Panel1.Controls.Add(this.txtNamaPembayar);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel1.Controls.Add(this.txtKodeBayar);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.lblJudul);
             this.guna2Panel1.Location = new System.Drawing.Point(1, 3);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -98,7 +101,7 @@
             // txtTotal
             // 
             this.txtTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTotal.DefaultText = "Rp.";
+            this.txtTotal.DefaultText = "";
             this.txtTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtTotal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtTotal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -130,22 +133,25 @@
             this.guna2HtmlLabel6.TabIndex = 9;
             this.guna2HtmlLabel6.Text = "Total";
             // 
-            // comboBoxMetodePembayaran
+            // cbxMetodePembayaran
             // 
-            this.comboBoxMetodePembayaran.BackColor = System.Drawing.Color.Transparent;
-            this.comboBoxMetodePembayaran.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxMetodePembayaran.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxMetodePembayaran.FillColor = System.Drawing.Color.DeepSkyBlue;
-            this.comboBoxMetodePembayaran.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboBoxMetodePembayaran.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboBoxMetodePembayaran.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBoxMetodePembayaran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.comboBoxMetodePembayaran.ItemHeight = 30;
-            this.comboBoxMetodePembayaran.Location = new System.Drawing.Point(339, 340);
-            this.comboBoxMetodePembayaran.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxMetodePembayaran.Name = "comboBoxMetodePembayaran";
-            this.comboBoxMetodePembayaran.Size = new System.Drawing.Size(292, 36);
-            this.comboBoxMetodePembayaran.TabIndex = 8;
+            this.cbxMetodePembayaran.BackColor = System.Drawing.Color.Transparent;
+            this.cbxMetodePembayaran.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxMetodePembayaran.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxMetodePembayaran.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.cbxMetodePembayaran.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbxMetodePembayaran.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbxMetodePembayaran.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbxMetodePembayaran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbxMetodePembayaran.ItemHeight = 30;
+            this.cbxMetodePembayaran.Items.AddRange(new object[] {
+            "Tunai",
+            "Bank"});
+            this.cbxMetodePembayaran.Location = new System.Drawing.Point(339, 340);
+            this.cbxMetodePembayaran.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxMetodePembayaran.Name = "cbxMetodePembayaran";
+            this.cbxMetodePembayaran.Size = new System.Drawing.Size(292, 36);
+            this.cbxMetodePembayaran.TabIndex = 8;
             // 
             // guna2HtmlLabel5
             // 
@@ -159,22 +165,26 @@
             this.guna2HtmlLabel5.TabIndex = 7;
             this.guna2HtmlLabel5.Text = "Metode Pembayaran";
             // 
-            // comboBoxJenisBayar
+            // cbxJenisBayar
             // 
-            this.comboBoxJenisBayar.BackColor = System.Drawing.Color.Transparent;
-            this.comboBoxJenisBayar.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxJenisBayar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxJenisBayar.FillColor = System.Drawing.Color.DeepSkyBlue;
-            this.comboBoxJenisBayar.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboBoxJenisBayar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboBoxJenisBayar.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBoxJenisBayar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.comboBoxJenisBayar.ItemHeight = 30;
-            this.comboBoxJenisBayar.Location = new System.Drawing.Point(31, 340);
-            this.comboBoxJenisBayar.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBoxJenisBayar.Name = "comboBoxJenisBayar";
-            this.comboBoxJenisBayar.Size = new System.Drawing.Size(292, 36);
-            this.comboBoxJenisBayar.TabIndex = 6;
+            this.cbxJenisBayar.BackColor = System.Drawing.Color.Transparent;
+            this.cbxJenisBayar.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxJenisBayar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxJenisBayar.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.cbxJenisBayar.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbxJenisBayar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbxJenisBayar.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbxJenisBayar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbxJenisBayar.ItemHeight = 30;
+            this.cbxJenisBayar.Items.AddRange(new object[] {
+            "SPP",
+            "Biaya Ujian",
+            "Biaya Pembangunan"});
+            this.cbxJenisBayar.Location = new System.Drawing.Point(31, 340);
+            this.cbxJenisBayar.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxJenisBayar.Name = "cbxJenisBayar";
+            this.cbxJenisBayar.Size = new System.Drawing.Size(292, 36);
+            this.cbxJenisBayar.TabIndex = 6;
             // 
             // guna2HtmlLabel4
             // 
@@ -188,27 +198,27 @@
             this.guna2HtmlLabel4.TabIndex = 5;
             this.guna2HtmlLabel4.Text = "Jenis Pembayaran";
             // 
-            // txtNamaPmebayar
+            // txtNamaPembayar
             // 
-            this.txtNamaPmebayar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNamaPmebayar.DefaultText = "";
-            this.txtNamaPmebayar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNamaPmebayar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNamaPmebayar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNamaPmebayar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNamaPmebayar.FillColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtNamaPmebayar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamaPmebayar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtNamaPmebayar.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtNamaPmebayar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNamaPmebayar.Location = new System.Drawing.Point(27, 238);
-            this.txtNamaPmebayar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNamaPmebayar.Name = "txtNamaPmebayar";
-            this.txtNamaPmebayar.PasswordChar = '\0';
-            this.txtNamaPmebayar.PlaceholderText = "";
-            this.txtNamaPmebayar.SelectedText = "";
-            this.txtNamaPmebayar.Size = new System.Drawing.Size(605, 52);
-            this.txtNamaPmebayar.TabIndex = 4;
+            this.txtNamaPembayar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNamaPembayar.DefaultText = "";
+            this.txtNamaPembayar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNamaPembayar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNamaPembayar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNamaPembayar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNamaPembayar.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtNamaPembayar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNamaPembayar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtNamaPembayar.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txtNamaPembayar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNamaPembayar.Location = new System.Drawing.Point(27, 238);
+            this.txtNamaPembayar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNamaPembayar.Name = "txtNamaPembayar";
+            this.txtNamaPembayar.PasswordChar = '\0';
+            this.txtNamaPembayar.PlaceholderText = "";
+            this.txtNamaPembayar.SelectedText = "";
+            this.txtNamaPembayar.Size = new System.Drawing.Size(605, 52);
+            this.txtNamaPembayar.TabIndex = 4;
             // 
             // guna2HtmlLabel3
             // 
@@ -244,17 +254,31 @@
             this.txtKodeBayar.Size = new System.Drawing.Size(605, 52);
             this.txtKodeBayar.TabIndex = 2;
             // 
-            // guna2HtmlLabel1
+            // lblJudul
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 16);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(186, 31);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Edit Pembayaran";
+            this.lblJudul.BackColor = System.Drawing.Color.Transparent;
+            this.lblJudul.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJudul.ForeColor = System.Drawing.Color.White;
+            this.lblJudul.Location = new System.Drawing.Point(27, 16);
+            this.lblJudul.Margin = new System.Windows.Forms.Padding(4);
+            this.lblJudul.Name = "lblJudul";
+            this.lblJudul.Size = new System.Drawing.Size(186, 31);
+            this.lblJudul.TabIndex = 0;
+            this.lblJudul.Text = "Edit Pembayaran";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(450, 30);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(51, 45);
+            this.guna2Button1.TabIndex = 12;
+            this.guna2Button1.Text = "guna2Button1";
             // 
             // popUpEditPembayaran
             // 
@@ -263,7 +287,6 @@
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(651, 662);
             this.Controls.Add(this.guna2Panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "popUpEditPembayaran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "popUpEditPembayaran";
@@ -280,13 +303,14 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox txtTotal;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2ComboBox comboBoxMetodePembayaran;
+        private Guna.UI2.WinForms.Guna2ComboBox cbxMetodePembayaran;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2ComboBox comboBoxJenisBayar;
+        private Guna.UI2.WinForms.Guna2ComboBox cbxJenisBayar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2TextBox txtNamaPmebayar;
+        private Guna.UI2.WinForms.Guna2TextBox txtNamaPembayar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txtKodeBayar;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblJudul;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

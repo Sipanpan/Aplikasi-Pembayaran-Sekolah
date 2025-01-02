@@ -178,7 +178,7 @@ namespace Final_Project.View
                 item.SubItems.Add(byr.Nama);
                 item.SubItems.Add(byr.Jenis_Pembayaran);
                 item.SubItems.Add(byr.Metode_Pembayaran);
-                //item.SubItems.Add(byr.Total);
+                item.SubItems.Add(Convert.ToString(byr.Total));
 
                 lvwPembayaran.Items.Add(item);
             }

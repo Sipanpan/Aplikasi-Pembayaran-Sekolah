@@ -8,6 +8,7 @@ using Final_Project.Model.Entity;
 using Final_Project.Model.Repository;
 using Final_Project.Model.Context;
 using System.Web.Management;
+using System.Collections.Specialized;
 
 
 namespace Final_Project.Controller
@@ -21,10 +22,9 @@ namespace Final_Project.Controller
         {
             int result = 0;
 
-            // cek kk_pembayaran yan diinputkan tidak boleh kosong
             if (string.IsNullOrEmpty(byr.Kd_Pembayaran))
             {
-                MessageBox.Show("Kd_Pembayaran harus diisi !!!", "Peringatan",
+                MessageBox.Show("Kd harus diisi !!!", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return 0;
             }
@@ -53,6 +53,13 @@ namespace Final_Project.Controller
                 return 0;
             }
 
+            if (string.IsNullOrEmpty(byr.Total.ToString()))
+            {
+                MessageBox.Show("total harus diisi !!!", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return 0;
+            }
+
             // membuat objek context menggunakan blok using
             using (DbContext context = new DbContext())
             {
@@ -65,12 +72,12 @@ namespace Final_Project.Controller
 
             if (result > 0)
             {
-                MessageBox.Show("Data Pembayaran berhasil disimpan !", "Informasi",
+                MessageBox.Show("Data barang berhasil disimpan !", "Informasi",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Data Pembayaran gagal disimpan !!!", "Peringatan",
+                MessageBox.Show("Data barang gagal disimpan !!!", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             return result;
