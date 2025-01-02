@@ -15,6 +15,7 @@ namespace Final_Project
     {
         login lgn;
         FormPembayaran pembayaran;
+        FormTambahPembayaran tambahPembayaran;
         public mainForm()
         {
             InitializeComponent();
@@ -53,6 +54,21 @@ namespace Final_Project
         private void pembayaran_FormClosed(object sender, FormClosedEventArgs e)
         {
             pembayaran = null;
+        }
+
+        private void btnTambahPembayaran_Click(object sender, EventArgs e)
+        {
+            pnMDI.Visible = false;
+            tambahPembayaran = new FormTambahPembayaran();
+            tambahPembayaran.FormClosed += tambahPembayaran_FormClosed;
+            tambahPembayaran.MdiParent = this;
+            tambahPembayaran.Dock = DockStyle.Fill;
+            tambahPembayaran.Show();
+        }
+
+        private void tambahPembayaran_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            tambahPembayaran = null;
         }
     }
 }

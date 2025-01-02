@@ -70,6 +70,12 @@
     <Compile Include="View\FormPembayaran.Designer.cs">
       <DependentUpon>FormPembayaran.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormTambahPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormTambahPembayaran.Designer.cs">
+      <DependentUpon>FormTambahPembayaran.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormPembayaran.resx">
       <DependentUpon>FormPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormTambahPembayaran.resx">
+      <DependentUpon>FormTambahPembayaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\login.resx">
       <DependentUpon>login.cs</DependentUpon>

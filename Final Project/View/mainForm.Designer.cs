@@ -217,6 +217,7 @@
             this.btnTambahPembayaran.TabIndex = 1;
             this.btnTambahPembayaran.Text = "Tambah Pembayaran";
             this.btnTambahPembayaran.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnTambahPembayaran.Click += new System.EventHandler(this.btnTambahPembayaran_Click);
             // 
             // guna2Panel5
             // 
