@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Final_Project.View
 {
-    public partial class FormDashboard : Form
+    public partial class FormBeranda : Form
     {
-        public FormDashboard()
+        public FormBeranda()
         {
             InitializeComponent();
         }

@@ -14,7 +14,7 @@ namespace Final_Project
     public partial class mainForm : Form
     {
         login lgn;
-        FormDashboard dashboard;
+        FormBeranda dashboard;
         public mainForm()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace Final_Project
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             pnMDI.Visible = false;
-            dashboard = new FormDashboard();
+            dashboard = new FormBeranda();
             dashboard.FormClosed += dashboard_FormClosed;
             dashboard.MdiParent = this;
             dashboard.Dock = DockStyle.Fill;

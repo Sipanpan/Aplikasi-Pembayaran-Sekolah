@@ -1,6 +1,6 @@
 ﻿namespace Final_Project.View
 {
-    partial class FormDashboard
+    partial class FormBeranda
     {
         /// <summary>
         /// Required designer variable.
@@ -49,14 +49,15 @@
             this.txtJudul.TabIndex = 1;
             this.txtJudul.Text = "INI DASHBOARD";
             // 
-            // dashboard
+            // FormBeranda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1137, 1024);
             this.Controls.Add(this.txtJudul);
             this.Controls.Add(this.guna2Panel1);
-            this.Name = "dashboard";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormBeranda";
             this.Text = "dashboard";
             this.ResumeLayout(false);
             this.PerformLayout();
