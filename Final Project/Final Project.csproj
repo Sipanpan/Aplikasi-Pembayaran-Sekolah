@@ -119,6 +119,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Group 1.png" />
+    <None Include="Resources\btnLogOut.png" />
+    <None Include="Resources\btnTambahBayar.png" />
+    <None Include="Resources\btnPembayaran.png" />
+    <None Include="Resources\btnBeranda.png" />
+    <None Include="Resources\navbar.png" />
     <None Include="Resources\el_ok-circle.png" />
     <None Include="Resources\Continue Button Container.png" />
     <None Include="Resources\hugeicons_lock.png" />

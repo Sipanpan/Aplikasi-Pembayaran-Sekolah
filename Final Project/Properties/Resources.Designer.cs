@@ -73,6 +73,46 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnBeranda {
+            get {
+                object obj = ResourceManager.GetObject("btnBeranda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnLogOut {
+            get {
+                object obj = ResourceManager.GetObject("btnLogOut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnPembayaran {
+            get {
+                object obj = ResourceManager.GetObject("btnPembayaran", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnTambahBayar {
+            get {
+                object obj = ResourceManager.GetObject("btnTambahBayar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Continue_Button_Container {
             get {
                 object obj = ResourceManager.GetObject("Continue Button Container", resourceCulture);
@@ -136,6 +176,16 @@ namespace Final_Project.Properties {
         internal static System.Drawing.Bitmap Main_Screen {
             get {
                 object obj = ResourceManager.GetObject("Main_Screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navbar {
+            get {
+                object obj = ResourceManager.GetObject("navbar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

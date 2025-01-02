@@ -54,5 +54,10 @@ namespace Final_Project
         {
             Close();
         }
+
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
