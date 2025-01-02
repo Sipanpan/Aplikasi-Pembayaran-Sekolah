@@ -165,6 +165,7 @@
             this.btnBeranda.TabIndex = 1;
             this.btnBeranda.Text = "Beranda";
             this.btnBeranda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBeranda.Click += new System.EventHandler(this.btnBeranda_Click);
             // 
             // guna2Panel4
             // 

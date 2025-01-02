@@ -23,5 +23,12 @@ namespace Final_Project.View
             daftar from = new daftar();
             from.ShowDialog();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            mainForm masuk = new mainForm();
+            masuk.ShowDialog();
+        }
     }
 }

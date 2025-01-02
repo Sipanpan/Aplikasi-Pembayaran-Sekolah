@@ -70,5 +70,10 @@ namespace Final_Project
         {
             tambahPembayaran = null;
         }
+
+        private void btnBeranda_Click(object sender, EventArgs e)
+        {
+            pnMDI.Visible = true;
+        }
     }
 }
