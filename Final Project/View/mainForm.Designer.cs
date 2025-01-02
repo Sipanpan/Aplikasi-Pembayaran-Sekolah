@@ -57,19 +57,19 @@
             this.pnMDI.Controls.Add(this.guna2Panel1);
             this.pnMDI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMDI.Location = new System.Drawing.Point(0, 0);
-            this.pnMDI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnMDI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnMDI.Name = "pnMDI";
-            this.pnMDI.Size = new System.Drawing.Size(1440, 884);
+            this.pnMDI.Size = new System.Drawing.Size(1080, 718);
             this.pnMDI.TabIndex = 0;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Location = new System.Drawing.Point(303, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(227, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1137, 1024);
+            this.guna2Panel1.Size = new System.Drawing.Size(853, 832);
             this.guna2Panel1.TabIndex = 4;
             // 
             // guna2PictureBox1
@@ -77,9 +77,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::Final_Project.Properties.Resources.Group_11__3_;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, -148);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, -150);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1157, 1294);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(868, 1051);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
@@ -97,28 +98,28 @@
             this.flowLayoutPanel1.Controls.Add(this.guna2Panel5);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(307, 884);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 718);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel2.Location = new System.Drawing.Point(3, 2);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel2.Location = new System.Drawing.Point(2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(303, 100);
+            this.guna2Panel2.Size = new System.Drawing.Size(227, 81);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.Controls.Add(this.btnBeranda);
-            this.guna2Panel3.Location = new System.Drawing.Point(3, 106);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel3.Location = new System.Drawing.Point(2, 87);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(303, 106);
+            this.guna2Panel3.Size = new System.Drawing.Size(227, 86);
             this.guna2Panel3.TabIndex = 5;
             // 
             // btnBeranda
@@ -134,11 +135,11 @@
             this.btnBeranda.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnBeranda.ImageOffset = new System.Drawing.Point(0, 5);
             this.btnBeranda.ImageSize = new System.Drawing.Size(59, 58);
-            this.btnBeranda.Location = new System.Drawing.Point(3, 2);
-            this.btnBeranda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBeranda.Location = new System.Drawing.Point(2, 2);
+            this.btnBeranda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBeranda.Name = "btnBeranda";
-            this.btnBeranda.Padding = new System.Windows.Forms.Padding(5, 5, 0, 0);
-            this.btnBeranda.Size = new System.Drawing.Size(297, 97);
+            this.btnBeranda.Padding = new System.Windows.Forms.Padding(4, 4, 0, 0);
+            this.btnBeranda.Size = new System.Drawing.Size(223, 79);
             this.btnBeranda.TabIndex = 1;
             this.btnBeranda.Text = "Beranda";
             this.btnBeranda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -148,10 +149,10 @@
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel4.Controls.Add(this.btnPembayaran);
-            this.guna2Panel4.Location = new System.Drawing.Point(3, 216);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel4.Location = new System.Drawing.Point(2, 177);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(303, 106);
+            this.guna2Panel4.Size = new System.Drawing.Size(227, 86);
             this.guna2Panel4.TabIndex = 6;
             // 
             // btnPembayaran
@@ -167,11 +168,11 @@
             this.btnPembayaran.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPembayaran.ImageOffset = new System.Drawing.Point(5, 5);
             this.btnPembayaran.ImageSize = new System.Drawing.Size(49, 48);
-            this.btnPembayaran.Location = new System.Drawing.Point(3, 2);
-            this.btnPembayaran.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPembayaran.Location = new System.Drawing.Point(2, 2);
+            this.btnPembayaran.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPembayaran.Name = "btnPembayaran";
-            this.btnPembayaran.Padding = new System.Windows.Forms.Padding(11, 5, 0, 0);
-            this.btnPembayaran.Size = new System.Drawing.Size(297, 97);
+            this.btnPembayaran.Padding = new System.Windows.Forms.Padding(8, 4, 0, 0);
+            this.btnPembayaran.Size = new System.Drawing.Size(223, 79);
             this.btnPembayaran.TabIndex = 1;
             this.btnPembayaran.Text = "Pembayaran";
             this.btnPembayaran.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -181,10 +182,10 @@
             // 
             this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel6.Controls.Add(this.btnTambahPembayaran);
-            this.guna2Panel6.Location = new System.Drawing.Point(3, 326);
-            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel6.Location = new System.Drawing.Point(2, 267);
+            this.guna2Panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(303, 108);
+            this.guna2Panel6.Size = new System.Drawing.Size(227, 88);
             this.guna2Panel6.TabIndex = 7;
             // 
             // btnTambahPembayaran
@@ -200,11 +201,11 @@
             this.btnTambahPembayaran.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTambahPembayaran.ImageOffset = new System.Drawing.Point(0, 5);
             this.btnTambahPembayaran.ImageSize = new System.Drawing.Size(59, 58);
-            this.btnTambahPembayaran.Location = new System.Drawing.Point(3, 2);
-            this.btnTambahPembayaran.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTambahPembayaran.Location = new System.Drawing.Point(2, 2);
+            this.btnTambahPembayaran.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTambahPembayaran.Name = "btnTambahPembayaran";
-            this.btnTambahPembayaran.Padding = new System.Windows.Forms.Padding(5, 5, 0, 0);
-            this.btnTambahPembayaran.Size = new System.Drawing.Size(297, 103);
+            this.btnTambahPembayaran.Padding = new System.Windows.Forms.Padding(4, 4, 0, 0);
+            this.btnTambahPembayaran.Size = new System.Drawing.Size(223, 84);
             this.btnTambahPembayaran.TabIndex = 1;
             this.btnTambahPembayaran.Text = "Tambah Pembayaran";
             this.btnTambahPembayaran.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -214,10 +215,10 @@
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel5.Controls.Add(this.btnKeluar);
-            this.guna2Panel5.Location = new System.Drawing.Point(3, 438);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel5.Location = new System.Drawing.Point(2, 359);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(303, 106);
+            this.guna2Panel5.Size = new System.Drawing.Size(227, 86);
             this.guna2Panel5.TabIndex = 8;
             // 
             // btnKeluar
@@ -233,11 +234,11 @@
             this.btnKeluar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKeluar.ImageOffset = new System.Drawing.Point(0, 5);
             this.btnKeluar.ImageSize = new System.Drawing.Size(59, 58);
-            this.btnKeluar.Location = new System.Drawing.Point(3, 2);
-            this.btnKeluar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnKeluar.Location = new System.Drawing.Point(2, 2);
+            this.btnKeluar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnKeluar.Name = "btnKeluar";
-            this.btnKeluar.Padding = new System.Windows.Forms.Padding(5, 5, 0, 0);
-            this.btnKeluar.Size = new System.Drawing.Size(297, 97);
+            this.btnKeluar.Padding = new System.Windows.Forms.Padding(4, 4, 0, 0);
+            this.btnKeluar.Size = new System.Drawing.Size(223, 79);
             this.btnKeluar.TabIndex = 1;
             this.btnKeluar.Text = "Keluar";
             this.btnKeluar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -245,14 +246,14 @@
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 884);
+            this.ClientSize = new System.Drawing.Size(1080, 718);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pnMDI);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
