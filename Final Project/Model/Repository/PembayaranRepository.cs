@@ -88,18 +88,18 @@ namespace Final_Project.Model.Repository
             int result = 0;
 
             // deklarasi perintah SQL
-            string sql = @"update pembayaran set Nama = @Nama, Jenis_Pembayaran = @Jenis_Pembayaran, Metode_Pembayaran = @Metode_Pembayaran, Total = @Total
+            string sql = @"update pembayaran set Kd_Pembayaran = @Kd_Pembayaran, Nama = @Nama, Jenis_Pembayaran = @Jenis_Pembayaran, Metode_Pembayaran = @Metode_Pembayaran, Total = @Total
                            where Kd_Pembayaran = @Kd_Pembayaran";
 
             // membuat objek command menggunakan blok using
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _conn))
             {
                 // mendaftarkan parameter dan mengeset nilainya
+                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.Kd_Pembayaran);
                 cmd.Parameters.AddWithValue("@Nama", byr.Nama);
                 cmd.Parameters.AddWithValue("@Jenis_Pembayaran", byr.Jenis_Pembayaran);
                 cmd.Parameters.AddWithValue("@Metode_Pembayaran", byr.Metode_Pembayaran);
                 cmd.Parameters.AddWithValue("@Total", Int32.Parse(byr.Total.ToString()));
-                cmd.Parameters.AddWithValue("@Kd_Pembayaran", byr.Kd_Pembayaran);
 
                 try
                 {

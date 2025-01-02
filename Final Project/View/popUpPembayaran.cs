@@ -54,6 +54,7 @@ namespace Final_Project.View
         // Constructor untuk inisialisasi data ketika mengedit data
         public popUpEditPembayaran(string title, Pembayaran obj, PembayaranController controller) : this()
         {
+            txtKodeBayar.ReadOnly = true;
             // ganti text/judul form
             this.Text = title;
             this.Controller = controller;
@@ -63,8 +64,11 @@ namespace Final_Project.View
 
             // untuk edit data, tampilkan data lama
             lblJudul.Text = byr.Nama;
-            //txtJumlah.Text = brg.Jumlah;
-            //lblHarga.Text = brg.Harga;
+            txtKodeBayar.Text = byr.Kd_Pembayaran;
+            txtNamaPembayar.Text = byr.Nama;
+            cbxJenisBayar.Text = byr.Jenis_Pembayaran;
+            cbxMetodePembayaran.Text = byr.Metode_Pembayaran;
+            txtTotal.Text = byr.Total.ToString();
         }
 
         private void btnBayar_Click(object sender, EventArgs e)
@@ -98,6 +102,7 @@ namespace Final_Project.View
             {
                 // panggil operasi CRUD
                 result = Controller.Update(byr);
+                txtKodeBayar.ReadOnly = false;
 
                 if (result > 0)
                 {

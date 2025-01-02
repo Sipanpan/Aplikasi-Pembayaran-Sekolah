@@ -41,6 +41,8 @@ namespace Final_Project.View
             lvwPembayaran.Columns.Add("Jenis Pembayaran", 200, HorizontalAlignment.Center);
             lvwPembayaran.Columns.Add("Metode Pembayaran", 200, HorizontalAlignment.Center);
             lvwPembayaran.Columns.Add("Total", 100, HorizontalAlignment.Center);
+
+            this.Refresh();
         }
 
         // method untuk menampilkan semua data mahasiswa
@@ -97,16 +99,11 @@ namespace Final_Project.View
 
             // update informasi brg di listview
             ListViewItem itemRow = lvwPembayaran.Items[index];
-            itemRow.SubItems[2].Text = byr.Kd_Pembayaran;
-            itemRow.SubItems[1].Text = byr.Nama;
-            itemRow.SubItems[2].Text = byr.Jenis_Pembayaran;
-            itemRow.SubItems[3].Text = byr.Metode_Pembayaran;
-            itemRow.SubItems[4].Text = byr.Total.ToString();
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            itemRow.SubItems[1].Text = byr.Kd_Pembayaran;
+            itemRow.SubItems[2].Text = byr.Nama;
+            itemRow.SubItems[3].Text = byr.Jenis_Pembayaran;
+            itemRow.SubItems[4].Text = byr.Metode_Pembayaran;
+            itemRow.SubItems[5].Text = byr.Total.ToString();
         }
 
         private void btnPerbaiki_Click(object sender, EventArgs e)

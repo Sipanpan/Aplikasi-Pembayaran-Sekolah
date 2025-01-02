@@ -76,7 +76,6 @@
             this.txtCari.SelectedText = "";
             this.txtCari.Size = new System.Drawing.Size(212, 46);
             this.txtCari.TabIndex = 2;
-            this.txtCari.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // btnCari
             // 
