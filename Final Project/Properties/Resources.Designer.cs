@@ -73,6 +73,46 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Continue_Button_Container {
+            get {
+                object obj = ResourceManager.GetObject("Continue Button Container", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Email_Icon_Container {
+            get {
+                object obj = ResourceManager.GetObject("Email Icon Container", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Email_Icon_Container1 {
+            get {
+                object obj = ResourceManager.GetObject("Email Icon Container1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hugeicons_lock {
+            get {
+                object obj = ResourceManager.GetObject("hugeicons_lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
@@ -86,6 +126,26 @@ namespace Final_Project.Properties {
         internal static System.Drawing.Bitmap Main_Screen {
             get {
                 object obj = ResourceManager.GetObject("Main_Screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap raicabwsb2024_67c1a41c_ebd2_4aa7_86e2_a5a9e48ef198 {
+            get {
+                object obj = ResourceManager.GetObject("raicabwsb2024-67c1a41c-ebd2-4aa7-86e2-a5a9e48ef198", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,26 +176,6 @@ namespace Final_Project.Properties {
         internal static string String {
             get {
                 return ResourceManager.GetString("String", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngwing_com {
-            get {
-                object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap raicabwsb2024_67c1a41c_ebd2_4aa7_86e2_a5a9e48ef198 {
-            get {
-                object obj = ResourceManager.GetObject("raicabwsb2024-67c1a41c-ebd2-4aa7-86e2-a5a9e48ef198", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

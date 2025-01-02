@@ -110,6 +110,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Group 1.png" />
+    <None Include="Resources\Continue Button Container.png" />
+    <None Include="Resources\hugeicons_lock.png" />
+    <None Include="Resources\Email Icon Container1.png" />
+    <None Include="Resources\Email Icon Container.png" />
     <None Include="Resources\Group 1 %281%29.png" />
     <None Include="Resources\Background Shape.png" />
     <None Include="Resources\Group 5 %281%29.png" />
