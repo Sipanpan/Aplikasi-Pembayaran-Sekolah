@@ -11,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Final_Project.Controller;
+using Final_Project.Model.Entity;
 
 namespace Final_Project
 {
@@ -21,9 +23,40 @@ namespace Final_Project
         FormTambahPembayaran tambahPembayaran;
         popUpEditPembayaran popUpEditPembayaran;
         keluar keluar;
+        about about;
+
+        // deklarasi collection untuk menampung objek barang
+        private List<Pembayaran> listOfPembayaran = new List<Pembayaran>();
+
+        // deklarasi objek controller
+        private PembayaranController controller;
+
+
         public mainForm()
         {
             InitializeComponent();
+            // membuat objek controller
+            controller = new PembayaranController();
+        }
+
+
+        // method event handler untuk merespon event OnCreate
+        private void OnCreateEventHandler(Pembayaran byr)
+        {
+            // tambahkan objek brg yang baru ke dalam collection
+            listOfPembayaran.Add(byr);
+
+            int noUrut = listOfPembayaran.Count + 1;
+
+            // tampilkan data brg yang baru ke list view
+            ListViewItem item = new ListViewItem(noUrut.ToString());
+            item.SubItems.Add(byr.Kd_Pembayaran);
+            item.SubItems.Add(byr.Nama);
+            item.SubItems.Add(byr.Jenis_Pembayaran);
+            item.SubItems.Add(byr.Metode_Pembayaran);
+            item.SubItems.Add(byr.Total.ToString());
+
+            // lvwBarang.Items.Add(item);
         }
 
         private void btnPembayaran_Click(object sender, EventArgs e)
@@ -73,12 +106,21 @@ namespace Final_Project
 
         private void btnTambahPembayaran_Click(object sender, EventArgs e)
         {
-            pnMDI.Visible = false;
+            // buat objek form entry data barang
+            popUpEditPembayaran frmpop = new popUpEditPembayaran("Tambah Pembayaran", controller, "Bakso Jumbo");
+
+            // mendaftarkan method event handler utk merespon event OnCreate (subscribe)
+            frmpop.OnCreate += OnCreateEventHandler;
+
+            // tampilkan form entry barang
+            frmpop.ShowDialog();
+
+            /*pnMDI.Visible = false;
             tambahPembayaran = new FormTambahPembayaran();
             tambahPembayaran.FormClosed += tambahPembayaran_FormClosed;
             tambahPembayaran.MdiParent = this;
             tambahPembayaran.Dock = DockStyle.Fill;
-            tambahPembayaran.Show();
+            tambahPembayaran.Show();*/
         }
 
         private void tambahPembayaran_FormClosed(object sender, FormClosedEventArgs e)
@@ -152,6 +194,21 @@ namespace Final_Project
             {
                 MessageBox.Show($"Gagal membuat database: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            pnMDI.Visible = false;
+            about = new about();
+            about.FormClosed += about_FormClosed;
+            about.MdiParent = this;
+            about.Dock = DockStyle.Fill;
+            about.Show();
+        }
+
+        private void about_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            about = null;
         }
     }
 }

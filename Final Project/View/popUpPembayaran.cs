@@ -96,6 +96,7 @@ namespace Final_Project.View
 
                     // reset form input, untuk persiapan input data berikutnya
                     txtKodeBayar.Clear();
+                    this.Close();
                 }
             }
             else // edit data, panggil method Update
@@ -110,6 +111,17 @@ namespace Final_Project.View
                     this.Close();
                 }
             }
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            GenerateKd();
+
+        }
+
+        private void GenerateKd()
+        {
+           // txtKodeBayar = byr.Kd_Pembayaran;
         }
     }
 }

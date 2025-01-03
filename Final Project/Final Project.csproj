@@ -162,6 +162,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Properties\Group 1.png" />
+    <None Include="Resources\Group 19.png" />
+    <None Include="Resources\Group 20.png" />
     <None Include="Resources\fe5ff7619c50335a2992d770177f960f 1.png" />
     <None Include="Resources\27daa798a0bf753c2adbc96862baca5b 1.png" />
     <None Include="Resources\8ea057488ca18f2814bce2099130647f 1.png" />
