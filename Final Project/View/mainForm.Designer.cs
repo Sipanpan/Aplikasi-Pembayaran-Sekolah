@@ -43,7 +43,6 @@
             this.btnKeluar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTes = new Guna.UI2.WinForms.Guna2Button();
             this.pnMDI.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -101,7 +100,6 @@
             this.flowLayoutPanel1.Controls.Add(this.guna2Panel6);
             this.flowLayoutPanel1.Controls.Add(this.guna2Panel5);
             this.flowLayoutPanel1.Controls.Add(this.guna2Panel7);
-            this.flowLayoutPanel1.Controls.Add(this.btnTes);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -283,22 +281,6 @@
             this.guna2Button1.UseTransparentBackground = true;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // btnTes
-            // 
-            this.btnTes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTes.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTes.ForeColor = System.Drawing.Color.White;
-            this.btnTes.Location = new System.Drawing.Point(4, 651);
-            this.btnTes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTes.Name = "btnTes";
-            this.btnTes.Size = new System.Drawing.Size(240, 55);
-            this.btnTes.TabIndex = 9;
-            this.btnTes.Text = "tes koneksi";
-            this.btnTes.Click += new System.EventHandler(this.btnTes_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -340,7 +322,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Button btnKeluar;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btnTes;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }

@@ -73,8 +73,9 @@
             this.btnCari.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCari.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCari.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCari.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCari.ForeColor = System.Drawing.Color.White;
+            this.btnCari.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.btnCari.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCari.ForeColor = System.Drawing.Color.Black;
             this.btnCari.Location = new System.Drawing.Point(1032, 160);
             this.btnCari.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCari.Name = "btnCari";
@@ -89,12 +90,13 @@
             this.btnPerbaiki.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPerbaiki.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPerbaiki.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPerbaiki.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPerbaiki.ForeColor = System.Drawing.Color.White;
-            this.btnPerbaiki.Location = new System.Drawing.Point(38, 160);
+            this.btnPerbaiki.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.btnPerbaiki.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnPerbaiki.ForeColor = System.Drawing.Color.Black;
+            this.btnPerbaiki.Location = new System.Drawing.Point(31, 160);
             this.btnPerbaiki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPerbaiki.Name = "btnPerbaiki";
-            this.btnPerbaiki.Size = new System.Drawing.Size(93, 46);
+            this.btnPerbaiki.Size = new System.Drawing.Size(100, 46);
             this.btnPerbaiki.TabIndex = 4;
             this.btnPerbaiki.Text = "Perbaiki";
             this.btnPerbaiki.Click += new System.EventHandler(this.btnPerbaiki_Click);
@@ -105,8 +107,9 @@
             this.btnHapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnHapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnHapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHapus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnHapus.ForeColor = System.Drawing.Color.White;
+            this.btnHapus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.btnHapus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnHapus.ForeColor = System.Drawing.Color.Black;
             this.btnHapus.Location = new System.Drawing.Point(148, 160);
             this.btnHapus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHapus.Name = "btnHapus";
@@ -119,6 +122,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.label1.Location = new System.Drawing.Point(266, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(549, 88);
@@ -131,8 +135,9 @@
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.Location = new System.Drawing.Point(260, 160);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
@@ -145,6 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(183)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1137, 884);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label1);

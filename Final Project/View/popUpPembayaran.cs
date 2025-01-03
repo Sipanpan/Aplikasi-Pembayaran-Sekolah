@@ -63,7 +63,7 @@ namespace Final_Project.View
             byr = obj; // set objek brg yang akan diedit
 
             // untuk edit data, tampilkan data lama
-            lblJudul.Text = byr.Nama;
+            lblJudul.Text = title;
             txtKodeBayar.Text = byr.Kd_Pembayaran;
             txtNamaPembayar.Text = byr.Nama;
             cbxJenisBayar.Text = byr.Jenis_Pembayaran;
